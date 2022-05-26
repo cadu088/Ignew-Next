@@ -1,31 +1,43 @@
 {
-  "name": "ignews",
-  "private": true,
-  "version": "0.1.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@stripe/stripe-js": "^1.13.1",
-    "axios": "^0.24.0",
-    "faunadb": "^4.4.1",
-    "next": "12.0.4",
-    "next-auth": "3.29.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "sass": "^1.43.4",
-    "stripe": "^8.191.0"
-  },
-  "devDependencies": {
-    "@types/next-auth": "^3.15.0",
-    "@types/node": "^16.11.9",
-    "@types/react": "^17.0.37",
-    "eslint": "7",
-    "eslint-config-next": "12.0.4",
-    "typescript": "^4.5.2"
-  }
+	"name": "ignews",
+	"version": "0.0.1v",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@prismicio/client": "^5.1.0",
+		"@stripe/stripe-js": "^1.21.1",
+		"@testing-library/react": "^12.0.0",
+		"axios": "^0.24.0",
+		"faunadb": "^4.4.1",
+		"next": "^12.1.6",
+		"next-auth": "^3.29.0",
+		"prismic-dom": "^2.2.6",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-icons": "^4.3.1",
+		"sass": "^1.43.4",
+		"stripe": "^8.190.0"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^8.13.0",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@types/next-auth": "^3.15.0",
+		"@types/node": "^16.11.7",
+		"@types/prismic-dom": "^2.1.1",
+		"@types/react": "^17.0.34",
+		"babel-jest": "^28.1.0",
+		"eslint": "7",
+		"eslint-config-next": "12.0.3",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^28.1.0",
+		"jest-dom": "^4.0.0",
+		"jest-environment-jsdom": "^28.1.0",
+		"typescript": "^4.4.4"
+	}
 }

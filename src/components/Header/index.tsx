@@ -1,17 +1,22 @@
-import { SignInButton } from '../SignInButton';
 import styles from './styles.module.scss';
-export function Header(){
-return(
-	<header className={styles.headerContainer}>
-		<div className={styles.headerContent}>
-			<img src="/sorces/logo.svg" alt="ig.news"/>
-			<nav>
-				<a className={styles.active}>Home</a>
-				<a>Posts</a>
-			</nav>
-			<SignInButton/>
-		</div>
-	</header>
+import { SignInButton } from '../SignInButton';
+import { ActiveLink } from '../ActiveLink'
 
-);
+export function Header() {
+	return (
+		<header className={styles.headerContainer}>
+			<div className={styles.headerContent}>
+				<img src="/sorces/logo.svg" alt="IgNews" />
+				<nav>
+					<ActiveLink href="/" activeClassName={styles.active}>
+						<a>Home</a>
+					</ActiveLink>
+					<ActiveLink href="/posts" prefetch activeClassName={styles.active}>
+						<a>Posts</a>
+					</ActiveLink>
+				</nav>
+				<SignInButton />
+			</div>
+		</header>
+	);
 }
